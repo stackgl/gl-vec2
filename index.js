@@ -10,6 +10,7 @@ module.exports = {
   , divide: require('./divide')
   , min: require('./min')
   , max: require('./max')
+  , rotate: require('./rotate')
   , scale: require('./scale')
   , scaleAndAdd: require('./scaleAndAdd')
   , distance: require('./distance')
