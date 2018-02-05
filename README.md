@@ -26,6 +26,7 @@ var scale = require('gl-vec2/scale')
 ## API
 
   - [add()](#addoutvec2avec2bvec2)
+  - [ceil()](#ceiloutvec2avec2)
   - [clone()](#cloneavec2)
   - [copy()](#copyoutvec2avec2)
   - [create()](#create)
@@ -35,6 +36,7 @@ var scale = require('gl-vec2/scale')
   - [divide()](#divideoutvec2avec2bvec2)
   - [div()](#divideoutvec2avec2bvec2)
   - [dot()](#dotavec2bvec2)
+  - [floor()](#flooroutvec2avec2)
   - [forEach()](#foreachaarraystridenumberoffsetnumbercountnumberfnfunctionargobject)
   - [fromValues()](#fromvaluesxnumberynumber)
   - [length()](#lengthavec2)
@@ -48,6 +50,7 @@ var scale = require('gl-vec2/scale')
   - [normalize()](#normalizeoutvec2avec2)
   - [random()](#randomoutvec2scalenumber)
   - [rotate()](#rotateoutvec2avec2bnumber)
+  - [round()](#roundoutvec2avec2)
   - [scale()](#scaleoutvec2avec2bnumber)
   - [scaleAndAdd()](#scaleandaddoutvec2avec2bvec2scalenumber)
   - [set()](#setoutvec2xnumberynumber)
@@ -65,6 +68,10 @@ var scale = require('gl-vec2/scale')
 ## add(out:vec2, a:vec2, b:vec2)
 
   Adds two vec2's
+
+## ceil(out:vec2, a:vec2)
+
+  `Math.ceil` the components of a vec2
 
 ## clone(a:vec2)
 
@@ -94,6 +101,10 @@ var scale = require('gl-vec2/scale')
 ## dot(a:vec2, b:vec2)
 
   Calculates the dot product of two vec2's
+
+## floor(out:vec2, a:vec2)
+
+  `Math.floor` the components of a vec2
 
 ## forEach(a:Array, stride:Number, offset:Number, count:Number, fn:Function, [arg]:Object)
 
@@ -134,6 +145,10 @@ var scale = require('gl-vec2/scale')
 ## random(out:vec2, [scale]:Number)
 
   Generates a random vector with the given scale
+
+## round(out:vec2, a:vec2)
+
+  `Math.round` the components of a vec2
 
 ## scale(out:vec2, a:vec2, b:Number)
 
