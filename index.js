@@ -1,9 +1,12 @@
 module.exports = {
-  create: require('./create')
+  EPSILON: require('./epsilon')
+  , create: require('./create')
   , clone: require('./clone')
   , fromValues: require('./fromValues')
   , copy: require('./copy')
   , set: require('./set')
+  , equals: require('./equals')
+  , exactEquals: require('./exactEquals')
   , add: require('./add')
   , subtract: require('./subtract')
   , sub: require('./sub')
