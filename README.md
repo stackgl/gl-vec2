@@ -31,15 +31,19 @@ var scale = require('gl-vec2/scale')
   - [create()](#create)
   - [cross()](#crossoutvec3avec2bvec2)
   - [distance()](#distanceavec2bvec2)
+  - [dist()](#distanceavec2bvec2)
   - [divide()](#divideoutvec2avec2bvec2)
+  - [div()](#divideoutvec2avec2bvec2)
   - [dot()](#dotavec2bvec2)
   - [forEach()](#foreachaarraystridenumberoffsetnumbercountnumberfnfunctionargobject)
   - [fromValues()](#fromvaluesxnumberynumber)
   - [length()](#lengthavec2)
+  - [len()](#lengthavec2)
   - [lerp()](#lerpoutvec2avec2bvec2tnumber)
   - [max()](#maxoutvec2avec2bvec2)
   - [min()](#minoutvec2avec2bvec2)
   - [multiply()](#multiplyoutvec2avec2bvec2)
+  - [mul()](#multiplyoutvec2avec2bvec2)
   - [negate()](#negateoutvec2avec2)
   - [normalize()](#normalizeoutvec2avec2)
   - [random()](#randomoutvec2scalenumber)
@@ -48,8 +52,11 @@ var scale = require('gl-vec2/scale')
   - [scaleAndAdd()](#scaleandaddoutvec2avec2bvec2scalenumber)
   - [set()](#setoutvec2xnumberynumber)
   - [squaredDistance()](#squareddistanceavec2bvec2)
+  - [sqrDist()](#squareddistanceavec2bvec2)
   - [squaredLength()](#squaredlengthavec2)
+  - [sqrLen()](#squaredlengthavec2)
   - [subtract()](#subtractoutvec2avec2bvec2)
+  - [sub()](#subtractoutvec2avec2bvec2)
   - [transformMat2()](#transformmat2outvec2avec2mmat2)
   - [transformMat2d()](#transformmat2doutvec2avec2mmat2d)
   - [transformMat3()](#transformmat3outvec2avec2mmat3)
@@ -78,11 +85,11 @@ var scale = require('gl-vec2/scale')
 
 ## distance(a:vec2, b:vec2)
 
-  Calculates the euclidian distance between two vec2's
+  Calculates the euclidian distance between two vec2's. Aliased as `dist`.
 
 ## divide(out:vec2, a:vec2, b:vec2)
 
-  Divides two vec2's
+  Divides two vec2's. Aliased as `div`.
 
 ## dot(a:vec2, b:vec2)
 
@@ -98,7 +105,7 @@ var scale = require('gl-vec2/scale')
 
 ## length(a:vec2)
 
-  Calculates the length of a vec2
+  Calculates the length of a vec2. Aliased as `len`.
 
 ## lerp(out:vec2, a:vec2, b:vec2, t:Number)
 
@@ -114,7 +121,7 @@ var scale = require('gl-vec2/scale')
 
 ## multiply(out:vec2, a:vec2, b:vec2)
 
-  Multiplies two vec2's
+  Multiplies two vec2's. Aliased as `mul`.
 
 ## negate(out:vec2, a:vec2)
 
@@ -142,15 +149,15 @@ var scale = require('gl-vec2/scale')
 
 ## squaredDistance(a:vec2, b:vec2)
 
-  Calculates the squared euclidian distance between two vec2's
+  Calculates the squared euclidian distance between two vec2's. Aliased as `sqrDist`.
 
 ## squaredLength(a:vec2)
 
-  Calculates the squared length of a vec2
+  Calculates the squared length of a vec2. Aliased as `sqrLen`.
 
 ## subtract(out:vec2, a:vec2, b:vec2)
 
-  Subtracts vector b from vector a
+  Subtracts vector b from vector a. Aliased as `sub`.
 
 ## transformMat2(out:vec2, a:vec2, m:mat2)
 
