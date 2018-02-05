@@ -160,6 +160,10 @@ var scale = require('gl-vec2/scale')
 
   `Math.round` the components of a vec2
 
+## rotate(out:vec2, a:vec2, angle:Number)
+
+  Rotates a vec2 by an angle (in radians)
+
 ## scale(out:vec2, a:vec2, b:Number)
 
   Scales a vec2 by a scalar number

@@ -1,3 +1,5 @@
+module.exports = equals
+
 var EPSILON = require('./epsilon')
 
 /**
@@ -7,7 +9,7 @@ var EPSILON = require('./epsilon')
  * @param {vec2} b The second vector.
  * @returns {Boolean} True if the vectors are equal, false otherwise.
  */
-module.exports = function(a, b) {
+function equals(a, b) {
   var a0 = a[0]
   var a1 = a[1]
   var b0 = b[0]
