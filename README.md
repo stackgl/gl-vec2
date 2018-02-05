@@ -36,6 +36,8 @@ var scale = require('gl-vec2/scale')
   - [divide()](#divideoutvec2avec2bvec2)
   - [div()](#divideoutvec2avec2bvec2)
   - [dot()](#dotavec2bvec2)
+  - [equals()](#equalsavec2bvec2)
+  - [exactEquals()](#exactEqualsavec2bvec2)
   - [floor()](#flooroutvec2avec2)
   - [forEach()](#foreachaarraystridenumberoffsetnumbercountnumberfnfunctionargobject)
   - [fromValues()](#fromvaluesxnumberynumber)
@@ -101,6 +103,14 @@ var scale = require('gl-vec2/scale')
 ## dot(a:vec2, b:vec2)
 
   Calculates the dot product of two vec2's
+
+## equals(a:vec2, b:vec2)
+
+  Returns whether or not the vectors have approximately the same elements in the same position.
+
+## exactEquals(a:vec2, b:vec2)
+
+  Returns whether or not the vectors exactly have the same elements in the same position (when compared with ===)
 
 ## floor(out:vec2, a:vec2)
 
