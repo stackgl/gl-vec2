@@ -41,6 +41,7 @@ var scale = require('gl-vec2/scale')
   - [floor()](#flooroutvec2-avec2)
   - [forEach()](#foreachaarray-stridenumber-offsetnumber-countnumber-fnfunction-argobject)
   - [fromValues()](#fromvaluesxnumber-ynumber)
+  - [inverse()](#inverseoutvec2-avec2)
   - [length()](#lengthavec2)
   - [len()](#lengthavec2)
   - [lerp()](#lerpoutvec2-avec2-bvec2-tnumber)
@@ -123,6 +124,10 @@ var scale = require('gl-vec2/scale')
 ## fromValues(x:Number, y:Number)
 
   Creates a new vec2 initialized with the given values
+
+## inverse(out:vec2, a:vec2)
+
+  Returns the inverse of the components of a vec2
 
 ## length(a:vec2)
 

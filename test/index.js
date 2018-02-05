@@ -112,6 +112,12 @@ test('fromValues', function (t) {
   t.end()
 })
 
+test('inverse', function (t) {
+  var result = vec2.inverse([], [2, 4])
+  t.deepEqual(result, [0.5, 0.25])
+  t.end()
+})
+
 test('length', function (t) {
   var result = vec2.length([3, 4])
   t.deepEqual(result, 5)

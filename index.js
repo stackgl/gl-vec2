@@ -14,6 +14,7 @@ module.exports = {
   , mul: require('./mul')
   , divide: require('./divide')
   , div: require('./div')
+  , inverse: require('./inverse')
   , min: require('./min')
   , max: require('./max')
   , rotate: require('./rotate')
