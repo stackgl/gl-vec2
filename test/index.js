@@ -281,3 +281,23 @@ test('transformMat4', function (t) {
   t.deepEqual(result, [52, 60])
   t.end()
 })
+
+test.only('limit', function (t) {
+  var v1 = [1, 1]
+  t.deepEqual(vec2.limit([], v1, vec2.length(v1)), v1);
+
+  var v2 = [5, 5]
+  var result2 = [0.7071067811865475, 0.7071067811865475]
+  var expected = vec2.limit([], v2, 1)
+  var isOk = vec2.equals(expected, result2)
+  t.equal(isOk, true)
+  var newMagnitude = vec2.length(expected)
+  var delta = Math.abs(1 - newMagnitude)
+  t.equal(true, delta < 0.001)
+
+  var v3 = [5, 5]
+  var result3 = [5, 5]
+  t.deepEqual(vec2.limit([], v3, 8.67), result3)
+
+  t.end()
+});
