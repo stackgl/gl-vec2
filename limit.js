@@ -4,10 +4,9 @@ module.exports = limit;
  * Limit the magnitude of this vector to the value used for the `max`
  * parameter.
  *
- * @method limit
- * @param  the vector to limit
- * @param  max the maximum magnitude for the vector
- * @returns out
+ * @param  {vec2} the vector to limit
+ * @param  {Number} max the maximum magnitude for the vector
+ * @returns {vec2} out
  */
 function limit(out, a, max) {
   var mSq = squaredLength(a);
