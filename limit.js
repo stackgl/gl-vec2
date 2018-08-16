@@ -1,9 +1,5 @@
 module.exports = limit;
 
-var squaredLength = require("./squaredLength");
-var scale = require("./scale");
-var copy = require("./copy");
-
 /**
  * Limit the magnitude of this vector to the value used for the `max`
  * parameter.
