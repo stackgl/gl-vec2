@@ -18,11 +18,11 @@ function limit(out, a, max) {
 
   if (mSq > max * max) {
     var n = Math.sqrt(mSq);
-    out[0] = a[0] / n;
-    out[1] = a[1] / n;
-    scale(out, out, max);
+    out[0] = a[0] / n * max;
+    out[1] = a[1] / n * max;
   } else {
-    copy(out, a);
+    out[0] = a[0];
+    out[1] = a[1];
   }
 
   return out;
