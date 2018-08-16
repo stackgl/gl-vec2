@@ -9,7 +9,7 @@ module.exports = limit;
  * @returns {vec2} out
  */
 function limit(out, a, max) {
-  var mSq = squaredLength(a);
+  var mSq = a[0] * a[0] + a[1] * a[1];
 
   if (mSq > max * max) {
     var n = Math.sqrt(mSq);
