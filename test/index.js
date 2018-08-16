@@ -282,7 +282,7 @@ test('transformMat4', function (t) {
   t.end()
 })
 
-test.only('limit', function (t) {
+test('limit', function (t) {
   var v1 = [1, 1]
   t.deepEqual(vec2.limit([], v1, vec2.length(v1)), v1);
 
