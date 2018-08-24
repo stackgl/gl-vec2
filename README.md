@@ -45,6 +45,7 @@ var scale = require('gl-vec2/scale')
   - [length()](#lengthavec2)
   - [len()](#lengthavec2)
   - [lerp()](#lerpoutvec2-avec2-bvec2-tnumber)
+  - [limit()](#limitoutvec2-avec2-maxnumber)
   - [max()](#maxoutvec2-avec2-bvec2)
   - [min()](#minoutvec2-avec2-bvec2)
   - [multiply()](#multiplyoutvec2-avec2-bvec2)
@@ -136,6 +137,10 @@ var scale = require('gl-vec2/scale')
 ## lerp(out:vec2, a:vec2, b:vec2, t:Number)
 
   Performs a linear interpolation between two vec2's
+
+## limit(out:vec2, a:vec2, max:Number)
+
+  Limit the magnitude of this vector to the value used for the `max` parameter
 
 ## max(out:vec2, a:vec2, b:vec2)
 

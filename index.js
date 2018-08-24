@@ -42,4 +42,5 @@ module.exports = {
   , transformMat3: require('./transformMat3')
   , transformMat4: require('./transformMat4')
   , forEach: require('./forEach')
+  , limit: require('./limit')
 }
